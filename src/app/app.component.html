@@ -4,3 +4,12 @@
   <li>Add a button which may only be clicked if the username is NOT an empty string</li>
   <li>Upon clicking the button, the username should be reset to an empty string</li>
 </ol>
+<hr><hr>
+<label>Username:</label>
+<input type="text" class="form-control"  [(ngModel)]="username">
+<hr>
+<label *ngIf="username != ''">{{username}}</label>
+<p *ngIf="message != ''">{{message}}</p>
+<hr>
+<button *ngIf="username != ''" class="btn btn-primary center" (click)="onChangeSubmit()">Add Data</button>
+
