@@ -18,6 +18,6 @@ export class AppComponent  implements OnInit {
   }
 
   onUpdateDataBound(event: Event) {
-    this.username = (event.target as HTMLInputElement).value;
+    this.message = '';
   }
 }

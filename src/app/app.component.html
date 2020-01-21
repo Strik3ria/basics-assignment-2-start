@@ -6,7 +6,7 @@
 </ol>
 <hr><hr>
 <label>Username:</label>
-<input type="text" class="form-control"  [(ngModel)]="username">
+<input type="text" class="form-control"  (keypress)="onUpdateDataBound($event)" [(ngModel)]='username'>
 <hr>
 <label *ngIf="username != ''">{{username}}</label>
 <p *ngIf="message != ''">{{message}}</p>
